@@ -1,9 +1,1 @@
-const openButton=document.getElementById("detailButton");
-const closeButton=document.getElementById("closeDetail");
-const panel=document.getElementById("detailPanel");
-function openPanel(){panel.hidden=false;openButton.setAttribute("aria-expanded","true");closeButton.focus()}
-function closePanel(){panel.hidden=true;openButton.setAttribute("aria-expanded","false");openButton.focus()}
-openButton.addEventListener("click",openPanel);
-closeButton.addEventListener("click",closePanel);
-panel.addEventListener("click",e=>{if(e.target===panel)closePanel()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!panel.hidden)closePanel()});
+(()=>{const toggle=document.querySelector('.nav-toggle');const nav=document.querySelector('#siteNav');if(!toggle||!nav)return;toggle.addEventListener('click',()=>{const expanded=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!expanded));toggle.setAttribute('aria-label',expanded?'메뉴 열기':'메뉴 닫기');toggle.textContent=expanded?'☰':'✕';nav.classList.toggle('is-open',!expanded)});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','메뉴 열기');toggle.textContent='☰';nav.classList.remove('is-open')}));})();
