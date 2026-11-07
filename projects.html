@@ -15,7 +15,24 @@
       <nav id="siteNav" class="nav" aria-label="주요 메뉴"><a href="index.html">소개 · 경력</a><a href="projects.html" aria-current="page">포트폴리오</a><a class="nav-contact" href="mailto:ksyji123@gmail.com">연락하기 ↗</a></nav>
     </header>
     <main id="main">
-      <section class="projects-hero section"><p class="eyebrow"><span class="live-dot"></span> WORK / PROJECT ARCHIVE</p><h1>설계의 이유부터<br><em>검증 결과까지.</em></h1><p>가상 기업 환경을 직접 구축하며 기록한 네트워크·보안 인프라 작업입니다. 실제로 확인한 내용과 구축 중인 항목을 구분했습니다.</p><div class="project-index"><a href="#global-game">01 글로벌 게임회사 <span>↗</span></a><a href="#japan-logistics">02 일본 물류센터 <span>↗</span></a><a href="#small-business">03 개인 보안 인프라 <span>↗</span></a></div></section>
+      <section class="projects-hero section"><p class="eyebrow"><span class="live-dot"></span> PORTFOLIO / 2026</p><h1>Project <em>Archive.</em></h1><p>네트워크와 보안 인프라를 직접 설계·구축한 작업을 모았습니다. 아래 목록에서 프로젝트를 선택하면 구성 이유, 수행 내용과 검증 기록을 확인할 수 있습니다.</p></section>
+      <section class="section project-catalog" aria-labelledby="catalogTitle">
+        <div class="catalog-heading"><div><p class="eyebrow">SELECTED WORKS / 03 PROJECTS</p><h2 id="catalogTitle">프로젝트 목록</h2></div><p>프로젝트별 진행 상태를 구분했습니다.</p></div>
+        <div class="catalog-list">
+          <article class="catalog-item">
+            <a class="catalog-visual catalog-visual-game" href="#global-game" aria-label="글로벌 게임회사 프로젝트 상세 보기"><span class="visual-corner">ALEPH ARENA</span><span class="visual-center">GAME<br>NETWORK</span><span class="visual-bottom">HQ / DEV / IDC / JP</span></a>
+            <div class="catalog-info"><div class="catalog-label"><span>팀 프로젝트 · 네트워크</span><span class="status-pill status-built">구축 · 일부 검증</span></div><h3><a href="#global-game">글로벌 게임회사 네트워크 인프라 설계 및 구축</a></h3><p>한국·일본의 본사·지사·데이터센터와 개발 센터를 연결하는 가상 기업 네트워크를 설계하고 구축했습니다.</p><div class="catalog-fact"><b>주요 구성</b><span>3-Tier · VLAN · DHCP Relay · Routing · NAT</span></div><div class="catalog-fact"><b>사용 기술</b><span>Cisco IOS · Rocky Linux · Windows · GNS3</span></div><a class="catalog-button" href="#global-game">프로젝트 상세 보기 ↗</a></div>
+          </article>
+          <article class="catalog-item">
+            <a class="catalog-visual catalog-visual-logistics" href="#japan-logistics" aria-label="일본 물류센터 프로젝트 상세 보기"><span class="visual-corner">JAPAN LOGISTICS</span><span class="visual-center">WMS<br>INFRA</span><span class="visual-bottom">LC / DC / API</span></a>
+            <div class="catalog-info"><div class="catalog-label"><span>팀 프로젝트 · 네트워크 / 보안</span><span class="status-pill status-progress">구축 진행 중</span></div><h3><a href="#japan-logistics">일본 물류센터 네트워크·보안 인프라 구축</a></h3><p>물류센터 3계층 네트워크, HSRP, 서버별 망 분리와 WMS 및 중앙 데이터센터 연동을 설계·구축하는 프로젝트입니다.</p><div class="catalog-fact"><b>주요 구성</b><span>3-Tier · HSRP · Spine–Leaf · WMS · API</span></div><div class="catalog-fact"><b>사용 기술</b><span>GNS3 · Cisco IOS · Rocky Linux · MariaDB</span></div><a class="catalog-button" href="#japan-logistics">프로젝트 상세 보기 ↗</a></div>
+          </article>
+          <article class="catalog-item">
+            <a class="catalog-visual catalog-visual-security" href="#small-business" aria-label="중소기업 보안 인프라 프로젝트 상세 보기"><span class="visual-corner">SECURITY LAB</span><span class="visual-center">SECURE<br>NETWORK</span><span class="visual-bottom">FIREWALL / VPN / IDS</span></a>
+            <div class="catalog-info"><div class="catalog-label"><span>개인 프로젝트 · 보안 인프라</span><span class="status-pill status-plan">설계 계획</span></div><h3><a href="#small-business">중소기업 보안 인프라 설계 및 구축</a></h3><p>50명·6개 부서 규모의 기업을 가정해 네트워크 분리, 접근 제어, 방화벽, VPN, 침입 탐지와 DMZ를 설계하는 개인 프로젝트입니다.</p><div class="catalog-fact"><b>주요 구성</b><span>VLAN · Firewall · VPN · IDS/IPS · WAF · DMZ</span></div><div class="catalog-fact"><b>사용 예정</b><span>GNS3 · Linux · Suricata</span></div><a class="catalog-button" href="#small-business">프로젝트 상세 보기 ↗</a></div>
+          </article>
+        </div>
+      </section>
       <section class="section project-detail" id="global-game">
         <div class="project-section-top"><span class="project-number">01 / NETWORK ENGINEERING</span><span class="status-pill status-built">구축 및 일부 동작 검증</span></div>
         <div class="project-detail-head"><div><h2>글로벌 게임회사<br>네트워크 인프라 설계·구축</h2><p class="project-subtitle">GNS3 기반 가상 게임회사 기업 네트워크 · HQ / DEV / IDC / JP</p></div><div class="project-facts"><div><span>ROLE</span><b>네트워크 설계 · 구축</b></div><div><span>TOOLS</span><b>GNS3 · Cisco IOS · Linux</b></div><div><span>FOCUS</span><b>VLAN · Routing · DHCP</b></div></div></div>
